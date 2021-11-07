@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Uses Buf [Buf](https://buf.build/) for Building and Style Check (Minimal).
+Uses [Buf](https://buf.build/) for Building and Style Check (Minimal).
 
 
 ## Style Guide
@@ -10,21 +10,7 @@ Uses Buf [Buf](https://buf.build/) for Building and Style Check (Minimal).
 -> Google Style Guide (https://developers.google.com/protocol-buffers/docs/style)
 
 
-### File Header
+## Generate 
 
-
-Example:
-```protobuf
-
-syntax = "proto3";
-
-package layercraft.api.auth;
-
-option java_multiple_files = true;
-option java_package = "io.layercraft.api.auth";
-
-option go_package = "layercraft/api/auth";
-
-```
-
-
+Command Java: buf generate --template buf-java.gen.yaml
+Command Go: buf generate --template buf-go.gen.yaml
