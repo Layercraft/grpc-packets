@@ -14,7 +14,7 @@ Uses Buf [Buf](https://buf.build/) for Building and Style Check (Minimal).
 
 
 Example:
-´´´protobuf
+```protobuf
 
 syntax = "proto3";
 
@@ -25,6 +25,6 @@ option java_package = "io.layercraft.api.auth";
 
 option go_package = "layercraft/api/auth";
 
-´´´
+```
 
 
