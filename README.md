@@ -12,6 +12,6 @@ Uses [Buf](https://buf.build/) for Building and Style Check (Minimal).
 
 ## Generate 
 
-Command Java: ``buf generate https://github.com/Layercraft/grpc-packets --template buf-java.gen.yaml``
+Command Java: ``buf generate https://github.com/Layercraft/grpc-packets.git --template buf-java.gen.yaml``
 
-Command Go: ``buf generate https://github.com/Layercraft/grpc-packets --template buf-go.gen.yaml``
+Command Go: ``buf generate https://github.com/Layercraft/grpc-packets.git --template buf-go.gen.yaml``
