@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package layercraft.api.auth;
+
+option java_multiple_files = true;
+option java_package = "io.layercraft.api.auth";
+
+option go_package = "io.layercraft.api.auth";
+
+message PlayerLoginStart { // c -> s
+    string username = 1;
+    string ip = 2;
+    repeated string additional_data = 3;
+}
+
+message EncryptionRequest { // s -> c
+    string serverid = 1;
+    bytes publickey = 2;
+    bytes verifytoken = 3;
+}
+
+message EncryptionResponse { // c -> s
+    bytes sharedsecret = 1;
+    bytes verifytoken = 2;
+}
+
+message PlayerLoginSuccess { // s -> c
+    string layeruuid = 1;
+    string mcuuid = 2;
+    string username = 3;
+    repeated string additional_data = 4;
+}
+
+service PlayerAuthService {
+    rpc LoginStart(PlayerLoginStart) returns (EncryptionRequest);
+    rpc LoginVerify(EncryptionResponse) returns (PlayerLoginSuccess);
+}
