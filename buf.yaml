@@ -1,4 +1,5 @@
 version: v1
+name: github.com/layercraft/grpc-packets
 lint:
   use:
     - MINIMAL
