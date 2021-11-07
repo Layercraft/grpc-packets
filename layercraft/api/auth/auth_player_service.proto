@@ -2,8 +2,6 @@ syntax = "proto3";
 
 package layercraft.api.auth;
 
-option go_package = "layercraft/api/auth";
-
 message PlayerLoginStart { // c -> s
     string username = 1;
     string ip = 2;

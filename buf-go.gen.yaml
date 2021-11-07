@@ -1,4 +1,9 @@
 version: v1
+managed:
+  enabled: true
+  optimize_for: CODE_SIZE
+  go_package_prefix:
+    default: github.com/layercraft/grpc-packets/gen/
 plugins:
   - name: go
     out: gen/go
