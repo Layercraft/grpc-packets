@@ -12,5 +12,6 @@ Uses [Buf](https://buf.build/) for Building and Style Check (Minimal).
 
 ## Generate 
 
-Command Java: buf generate --template buf-java.gen.yaml
-Command Go: buf generate --template buf-go.gen.yaml
+Command Java: ``buf generate --template buf-java.gen.yaml``
+
+Command Go: ``buf generate --template buf-go.gen.yaml``
