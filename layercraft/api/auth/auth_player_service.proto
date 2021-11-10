@@ -12,11 +12,13 @@ message EncryptionRequest { // s -> c
     string serverid = 1;
     bytes publickey = 2;
     bytes verifytoken = 3;
+    string recognition_hash = 4;
 }
 
 message EncryptionResponse { // c -> s
     bytes sharedsecret = 1;
     bytes verifytoken = 2;
+    string recognition_hash = 3;
 }
 
 message PlayerLoginSuccess { // s -> c
