@@ -1,3 +1,4 @@
+# Installation Guide: https://grpc.io/docs/languages/go/quickstart/
 version: v1
 managed:
   enabled: true

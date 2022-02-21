@@ -1,3 +1,5 @@
+# https://github.com/stepancheg/rust-protobuf 
+# $ cargo install protobuf-codegen
 version: v1
 managed:
   enabled: true
