@@ -1,0 +1,8 @@
+version: v1
+managed:
+  enabled: true
+  optimize_for: CODE_SIZE
+plugins:
+  - name: rust
+    out: gen/rust
+    opt:
